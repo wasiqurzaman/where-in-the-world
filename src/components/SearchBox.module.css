@@ -1,0 +1,31 @@
+.searchBox {
+  color: var(--text-color);
+  background-color: var(--element-color);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.8rem 3.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: var(--card-boxShadow);
+  width: fit-content;
+}
+
+.searchInput {
+  color: var(--text-color);
+  font-family: var(--base-font);
+  font-size: 1.6rem;
+  border: none;
+  background-color: inherit;
+  outline: none;
+  width: 40rem;
+}
+
+.searchIcon {
+  color: var(--text-color);
+  height: 1.7rem;
+}
+
+::placeholder {
+  color: var(--input-color);
+}
