@@ -1,68 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  &.light-mode {
+    /* (Light Mode Text) */
+    --text-color: hsl(200, 15%, 8%);
+    /* (Light Mode Input) */
+    --input-color: hsl(0, 0%, 52%);
+    /* (Light Mode Background) */
+    --bg-color: hsl(0, 0%, 98%);
+    /* (Dark Mode Text & Light Mode Elements) */
+    --element-color: hsl(0, 0%, 100%);
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+    --nav-boxShadow: 0 0 5px 2px rgba(100, 100, 100, 0.2);
+    --card-boxShadow: 0 0 10px 2px rgba(100, 100, 100, 0.2);
+  }
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  &.dark-mode {
+    /* (Dark Mode Text & Light Mode Elements) */
+    --text-color: hsl(0, 0%, 100%);
+    --input-color: hsl(0, 0%, 100%);
+    /* (Dark Mode Background) */
+    --bg-color: hsl(207, 26%, 17%);
+    /* (Dark Mode Elements) */
+    --element-color: hsl(209, 23%, 22%);
+
+    ---nav-boxShadow: none;
+    --card-boxShadow: none;
+  }
+
+  /* (Light Mode Text) */
+  --text-color: hsl(200, 15%, 8%);
+  /* (Light Mode Input) */
+  --input-color: hsl(0, 0%, 52%);
+  /* (Light Mode Background) */
+  --bg-color: hsl(0, 0%, 98%);
+  /* (Dark Mode Text & Light Mode Elements) */
+  --element-color: hsl(0, 0%, 100%);
+
+  --nav-boxShadow: 0 0 5px 2px rgba(100, 100, 100, 0.2);
+  --card-boxShadow: 0 0 10px 2px rgba(100, 100, 100, 0.2);
+
+  --base-font: "Nunito Sans", sans-serif;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+html {
+  font-size: 62.5%;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  font-family: var(--base-font);
+  font-optical-sizing: auto;
+  color: var(--very-dark-blue);
+  background-color: var(--bg-color);
 }
