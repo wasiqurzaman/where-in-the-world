@@ -1,0 +1,10 @@
+.btnDarkMode {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  background-color: inherit;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}

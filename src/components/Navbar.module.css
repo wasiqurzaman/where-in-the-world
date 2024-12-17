@@ -1,0 +1,23 @@
+.navbar {
+  color: var(--text-color);
+  background-color: var(--element-color);
+  font-family: var(--base-font);
+  font-size: 1.6rem;
+  -webkit-box-shadow: var(--nav-boxShadow);
+  box-shadow: var(--nav-boxShadow);
+}
+
+.navContent {
+  height: 7rem;
+  padding: 0 8rem;
+  margin: 0 auto;
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoText {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
