@@ -3,19 +3,22 @@ import Homepage from "./pages/Homepage";
 import MainLayout from "./layout/MainLayout";
 import CountryPage from "./pages/CountryPage";
 import "./index.css";
+import { DarkModeProvider } from "./context/DarkModeContext";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<MainLayout />}>
-          <Route index element={<Homepage />} />
-          <Route path="countries">
-            <Route path=":countryCode" element={<CountryPage />} />
+    <DarkModeProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainLayout />}>
+            <Route index element={<Homepage />} />
+            <Route path="countries">
+              <Route path=":countryCode" element={<CountryPage />} />
+            </Route>
           </Route>
-        </Route>
-      </Routes>
-    </BrowserRouter>
+        </Routes>
+      </BrowserRouter>
+    </DarkModeProvider>
   );
 }
 
