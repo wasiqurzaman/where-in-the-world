@@ -1,0 +1,14 @@
+.regionFilter {
+  color: var(--text-color);
+  background-color: var(--element-color);
+  font-family: var(--base-font);
+  font-size: 1.6rem;
+  width: 20rem;
+  height: 5.6rem;
+  border: none;
+  padding: 1.8rem 2.4rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  box-shadow: var(--card-boxShadow);
+}
