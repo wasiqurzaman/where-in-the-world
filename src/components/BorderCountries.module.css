@@ -1,0 +1,16 @@
+.borderCountries {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.borderCountry {
+  color: var(--text-color);
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: var(--element-color);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.07);
+}
