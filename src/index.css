@@ -20,7 +20,7 @@
     /* (Dark Mode Text & Light Mode Elements) */
     --element-color: hsl(0, 0%, 100%);
 
-    --nav-boxShadow: 0 0 5px 2px rgba(100, 100, 100, 0.2);
+    --nav-boxShadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
     --card-boxShadow: 0 0 10px 2px rgba(100, 100, 100, 0.2);
   }
 

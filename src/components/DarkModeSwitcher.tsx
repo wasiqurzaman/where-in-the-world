@@ -9,7 +9,7 @@ function DarkModeSwitcher() {
 
   return (
     <button className={styles.btnDarkMode} onClick={toggleDarkMode}>
-      {isDarkMode ? (
+      {!isDarkMode ? (
         <>
           <IoMoonOutline />
           <span>Dark Mode</span>
